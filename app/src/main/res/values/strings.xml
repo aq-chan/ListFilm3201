@@ -8,4 +8,13 @@
     <string name="aboutapp">About App</string>
     <string name="aboutDesc">This app shows movie catalogue</string>
     <string name="creator">Created By</string>
+    <string name="add_to_bookmark">Add to Bookmark</string>
+    <string name="remove_from_bookmark">Remove from Bookmark</string>
+    <string name="tambah_berhasil">Add Movie Successfull</string>
+    <string name="tambah_gagal">Movie Exist in Bookmark! Add Failed</string>
+    <string name="hapus_berhasil">Movie Removed from Bookmark</string>
+    <string name="hapus_gagal">Movie Not Found in Bookmark! Delete Failed</string>
+    <string name="show_bookmark">Show Bookmark</string>
+    <string name="list_bookmark">LIST BOOKMARK</string>
+    <string name="bookmark_empty">Bookmark Empty!</string>
 </resources>

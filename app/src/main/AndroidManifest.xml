@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ListFilm3201">
         <activity
+            android:name=".ListBookmarkActivity"
+            android:exported="false" />
+        <activity
             android:name=".IdentityActivity"
             android:exported="false" />
         <activity

@@ -26,4 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, IdentityActivity.class);
         startActivity(intent);
     }
+
+    public void showListBookmark(View view){
+        Intent intent = new Intent(this, ListBookmarkActivity.class);
+        startActivity(intent);
+    }
 }

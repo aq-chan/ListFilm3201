@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginLeft="@dimen/_15sdp"
     android:layout_marginRight="@dimen/_15sdp"
     android:layout_marginTop="@dimen/_15sdp"
     android:layout_marginBottom="@dimen/_15sdp"
+    tools:context=".DetailMovieActivity"
     >
 
     <TextView
@@ -15,9 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="@dimen/_14ssp"
+        android:textSize="@dimen/_20ssp"
         android:textStyle="bold"
         android:layout_gravity="center"/>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -134,10 +136,48 @@
     <TextView
         android:id="@+id/txtOverview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/_2sdp"
+        android:layout_weight="1"
+        android:justificationMode="inter_word"
         android:text="@string/app_name"
-        android:textSize="@dimen/_10sdp"
-        android:justificationMode="inter_word"/>
+        android:textSize="@dimen/_10sdp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btnAddMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_bookmark"
+            android:onClick="addMovie"/>
+        <Button
+            android:id="@+id/btnRemoveMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="removeMovie"
+            android:text="@string/remove_from_bookmark"
+            android:backgroundTint="@color/red"/>
+
+        <Button
+            android:id="@+id/btnShowBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_bookmark"
+            android:onClick="showBookmark"/>
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_10sdp"
+            />
+    </LinearLayout>
 </LinearLayout>

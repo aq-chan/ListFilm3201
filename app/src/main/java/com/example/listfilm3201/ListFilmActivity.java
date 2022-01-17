@@ -59,7 +59,6 @@ public class ListFilmActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private void addItemsFromJSON() {
         try {
-
             String jsonDataString = readJSONDataFromFile();
             JSONArray jsonArray = new JSONArray(jsonDataString);
 
@@ -96,7 +95,6 @@ public class ListFilmActivity extends AppCompatActivity {
         StringBuilder builder = new StringBuilder();
 
         try {
-
             String jsonString;
             inputStream = getResources().openRawResource(R.raw.list_movie);
             BufferedReader bufferedReader = new BufferedReader(

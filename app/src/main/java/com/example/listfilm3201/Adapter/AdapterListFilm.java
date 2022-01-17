@@ -54,6 +54,7 @@ public class AdapterListFilm extends RecyclerView.Adapter<AdapterListFilm.ViewHo
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), DetailMovieActivity.class);
                     intent.putExtra("txtTitle",viewItems.get(position).getTitle());
+                    intent.putExtra("txtId",viewItems.get(position).toString());
                     intent.putExtra("txtOverview",viewItems.get(position).getOverview());
                     intent.putExtra("txtDate",viewItems.get(position).getReleaseDate());
                     intent.putExtra("txtLanguage",viewItems.get(position).getOriginalLanguage());
@@ -75,13 +76,14 @@ public class AdapterListFilm extends RecyclerView.Adapter<AdapterListFilm.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView photos, picture;
-        TextView txtTitle, txtOverview, txtDate, txtOriginalTitle, txtLanguage, txtRating, txtVote;
+        TextView txtId, txtTitle, txtOverview, txtDate, txtOriginalTitle, txtLanguage, txtRating, txtVote;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             photos = itemView.findViewById(R.id.icon);
             picture = itemView.findViewById(R.id.picture);
+            txtId = itemView.findViewById(R.id.txtId);
             txtTitle = itemView.findViewById(R.id.txtTitle);
             txtOverview = itemView.findViewById(R.id.txtOverview);
             txtDate = itemView.findViewById(R.id.txtDate);

@@ -9,4 +9,13 @@
     <string name="aboutapp">Tentang Aplikasi</string>
     <string name="aboutDesc">Aplikasi ini menampilkan daftar film</string>
     <string name="creator">Dibuat Oleh</string>
+    <string name="add_to_bookmark">Tambahkan ke Bookmark</string>
+    <string name="remove_from_bookmark">Hapus dari Bookmark</string>
+    <string name="tambah_berhasil">Film Berhasil Ditambahkan</string>
+    <string name="tambah_gagal">Film Telah Ada di Bookmark! Gagal Menambahkan</string>
+    <string name="hapus_berhasil">Film Telah Dihapus dari Bookmark</string>
+    <string name="hapus_gagal">Film Tidak Ditemukan di Bookmark! Gagal dalam Menghapus</string>
+    <string name="show_bookmark">Tampilkan Bookmark</string>
+    <string name="list_bookmark">DAFTAR BOOKMARK</string>
+    <string name="bookmark_empty">Bookmark Kosong!</string>
 </resources>
